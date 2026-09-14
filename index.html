@@ -294,7 +294,19 @@
       html { scroll-behavior: auto; }
       .btn, .btn:hover { transition: none; transform: none; }
     }
-  </style>
+  
+.swg-photos { padding: 2.4rem 0 3rem; }
+.swg-photos .wrap { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; }
+.swg-photos h2 { margin: 0 0 .35rem; font-size: clamp(1.4rem, 3vw, 2rem); }
+.swg-photos .note { margin: 0 0 1rem; font-size: .85rem; opacity: .8; max-width: 60ch; }
+.swg-photos .hero-shot img { width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; border-radius: 12px; display: block; background: #222; }
+.swg-photos .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .85rem; margin-top: 1rem; }
+.swg-photos figure { margin: 0; }
+.swg-photos figure img { width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; border-radius: 10px; display: block; background: #222; }
+.swg-photos figcaption { font-size: .72rem; margin-top: .4rem; opacity: .75; }
+@media (max-width: 720px) { .swg-photos .grid { grid-template-columns: 1fr; } }
+
+</style>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -365,7 +377,28 @@
       </div>
     </section>
 
-    <section class="section" id="services">
+    
+  <section class="swg-photos" aria-labelledby="photos-h">
+    <div class="wrap">
+      <h2 id="photos-h">Shop atmosphere</h2>
+      <p class="note">No public shop photos were available. Stock images for garage, engine, and exhaust work.</p>
+      <div class="hero-shot">
+        <img src="images/garage.webp" alt="Stock photo of an auto repair garage" width="1600" height="900" fetchpriority="high" decoding="async">
+      </div>
+      <div class="grid">
+      <figure>
+        <img src="images/engine.webp" alt="Engine work (stock)" width="1200" height="900" loading="lazy" decoding="async">
+        <figcaption>Engine work (stock)</figcaption>
+      </figure>
+      <figure>
+        <img src="images/exhaust.webp" alt="Exhaust work (stock)" width="1200" height="900" loading="lazy" decoding="async">
+        <figcaption>Exhaust work (stock)</figcaption>
+      </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow">From public listings</p>
