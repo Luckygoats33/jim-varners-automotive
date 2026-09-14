@@ -306,6 +306,12 @@
 .swg-photos figcaption { font-size: .72rem; margin-top: .4rem; color: #57534e; opacity: 1; }
 @media (max-width: 720px) { .swg-photos .grid { grid-template-columns: 1fr; } }
 
+.hf-visuals { padding: 2.4rem 0 3rem; }
+.hf-visuals .wrap { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; }
+.hf-visuals h2 { margin: 0 0 .35rem; font-size: clamp(1.4rem, 3vw, 2rem); }
+.hf-visuals .note { margin: 0 0 1rem; font-size: .9rem; max-width: 60ch; }
+.hf-visuals .hero-shot img, .hf-visuals video { width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; border-radius: 12px; display: block; background: #222; }
+.hf-visuals .emblem { width: min(280px, 40%); height: auto; border-radius: 12px; display: block; margin-top: 1rem; }
 </style>
 </head>
 <body>
@@ -397,6 +403,20 @@
       </div>
     </div>
   </section>
+
+<section class="hf-visuals" aria-labelledby="hf-h">
+  <div class="wrap">
+    <h2 id="hf-h">Preview graphics</h2>
+    <p class="note">Generated preview visuals for this draft site. Not photographs of this business.</p>
+    <div class="hero-shot">
+      <img src="images/hf-hero.webp" alt="Generated Pacific Northwest auto garage scene" width="1600" height="895" loading="lazy" decoding="async">
+    </div>
+    <video controls playsinline preload="metadata" poster="images/hf-hero.webp" width="1600" height="895" style="margin-top:1rem">
+      <source src="images/hf-clip.mp4" type="video/mp4">
+    </video>
+    <img class="emblem" src="images/hf-emblem.webp" alt="Generated Varner Automotive emblem" width="800" height="800" loading="lazy" decoding="async">
+  </div>
+</section>
 
   <section class="section" id="services">
       <div class="wrap">
