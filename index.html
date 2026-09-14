@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#14110e">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://luckygoats33.github.io/jim-varners-automotive/">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%2314110e'/%3E%3Cpath d='M8 20h16M10 16h12M14 10v4M18 10v4' stroke='%23c45c26' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='23' r='2' fill='%23e8b84a'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%2314110e'/%3E%3Cpath d='M8 20h16M10 16h12M14 10v4M18 10v4' stroke='%238f3a14' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='23' r='2' fill='%23e8b84a'/%3E%3C/svg%3E">
   <meta property="og:title" content="Jim Varner’s Automotive | Astoria, OR">
   <meta property="og:description" content="Independent auto repair on Lewis and Clark Rd in Astoria. Call (503) 325-6486.">
   <meta property="og:type" content="website">
@@ -56,8 +56,8 @@
       --steel: #3a3732;
       --muted: #6d675e;
       --line: rgba(20,17,14,.12);
-      --copper: #c45c26;
-      --copper-hot: #d96a2e;
+      --copper: #8f3a14;
+      --copper-hot: #a8481c;
       --moss: #3f5a48;
       --gold: #e8b84a;
       --white: #fffaf4;
@@ -124,7 +124,7 @@
     .brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; color: inherit; min-width: 0; }
     .mark {
       width: 42px; height: 42px; flex: 0 0 42px;
-      border: 1px solid rgba(196,92,38,.55);
+      border: 1px solid rgba(143,58,20,.55);
       display: grid; place-items: center; background: #1b1713;
     }
     .brand-name { font-family: var(--display); font-size: 1.15rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; line-height: 1.05; }
@@ -154,7 +154,7 @@
     .hero {
       position: relative; overflow: hidden;
       background:
-        radial-gradient(1200px 500px at 80% -10%, rgba(196,92,38,.22), transparent 55%),
+        radial-gradient(1200px 500px at 80% -10%, rgba(143,58,20,.22), transparent 55%),
         linear-gradient(180deg, #171410 0%, #1c1914 55%, #14110e 100%);
       color: var(--white);
       padding: clamp(2.5rem, 6vw, 5rem) 0 0;
@@ -224,6 +224,8 @@
     }
     .panel h2 { color: #fff; }
     .panel p { color: #d4cbbd; }
+    .panel a { color: #f0c36a; }
+    .panel a:hover { color: #ffd980; }
     .addr {
       font-style: normal; margin: 1.2rem 0 1.4rem;
       font-size: 1.2rem; line-height: 1.45; color: #fff;
@@ -240,7 +242,6 @@
       min-height: 360px; background: #d9d2c4;
       border: 1px solid var(--line); position: relative; overflow: hidden;
     }
-    .map-frame iframe { width: 100%; height: 100%; min-height: 360px; border: 0; filter: grayscale(.15) contrast(1.05); }
     .map-overlay {
       position: absolute; left: 1rem; bottom: 1rem;
       background: var(--cream); color: var(--ink); text-decoration: none;
@@ -253,7 +254,9 @@
       background: var(--copper); color: #fff; padding: clamp(2.4rem, 5vw, 3.4rem) 0;
     }
     .cta-band h2 { color: #fff; margin-bottom: .7rem; }
-    .cta-band p { color: rgba(255,255,255,.9); max-width: 46ch; }
+    .cta-band p { color: #ffffff; max-width: 46ch; }
+    .cta-band .btn-ghost { color: #ffffff; border-color: #ffffff; }
+    .cta-band .btn-ghost:hover { background: rgba(255,255,255,.12); color: #ffffff; border-color: #ffffff; }
     .cta-row { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.3rem; }
     .cta-band .btn-dark:hover { background: #0b0a08; }
 
@@ -300,9 +303,9 @@
   </div>
 
   <header class="nav" role="banner">
-    <a class="brand" href="#top" aria-label="Jim Varner’s Automotive home">
+    <a class="brand" href="#top">
       <span class="mark" aria-hidden="true">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 16h16M7 12h10M10 6v4M14 6v4" stroke="#c45c26" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="18.5" r="1.6" fill="#e8b84a"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 16h16M7 12h10M10 6v4M14 6v4" stroke="#8f3a14" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="18.5" r="1.6" fill="#e8b84a"/></svg>
       </span>
       <span>
         <span class="brand-name">Jim Varner’s Automotive</span>
@@ -348,7 +351,7 @@
           <svg viewBox="0 0 480 360" role="presentation">
             <rect width="480" height="360" fill="#1a1612"/>
             <rect x="28" y="48" width="424" height="250" fill="#221c17" stroke="#3d342b"/>
-            <rect x="48" y="72" width="180" height="150" fill="#2b241d" stroke="#c45c26" stroke-opacity=".45"/>
+            <rect x="48" y="72" width="180" height="150" fill="#2b241d" stroke="#8f3a14" stroke-opacity=".45"/>
             <rect x="252" y="72" width="180" height="150" fill="#2b241d" stroke="#6d675e" stroke-opacity=".5"/>
             <path d="M70 200h136M274 200h136" stroke="#e8b84a" stroke-width="3"/>
             <circle cx="96" cy="248" r="22" fill="#14110e" stroke="#8a8176" stroke-width="6"/>
@@ -423,9 +426,12 @@
           </ul>
           <a class="btn btn-copper" href="https://www.google.com/maps/search/?api=1&amp;query=JIM+VARNER%27S+AUTOMOTIVE%2C+92348+Lewis+and+Clark+Rd%2C+Astoria%2C+OR" rel="noopener noreferrer" target="_blank">Directions on Google Maps</a>
         </div>
-        <div class="map-frame">
-          <iframe title="Map of Jim Varner’s Automotive in Astoria, Oregon" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=JIM+VARNER%27S+AUTOMOTIVE%2C+92348+Lewis+and+Clark+Rd%2C+Astoria%2C+OR&amp;z=15&amp;output=embed"></iframe>
-          <a class="map-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=JIM+VARNER%27S+AUTOMOTIVE%2C+92348+Lewis+and+Clark+Rd%2C+Astoria%2C+OR" rel="noopener noreferrer" target="_blank">Open in Google Maps</a>
+        <div class="map-frame" style="display:grid;place-items:center;background:linear-gradient(160deg,#d9d2c4,#c7bfb0);min-height:360px;padding:1.5rem;text-align:center;">
+          <div>
+            <p style="margin:0 0 .5rem;font-family:var(--display);font-size:1.6rem;letter-spacing:.04em;color:var(--ink);">92348 Lewis and Clark Rd</p>
+            <p class="muted" style="margin:0 0 1.1rem;">Astoria, OR 97103</p>
+            <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&amp;query=JIM+VARNER%27S+AUTOMOTIVE%2C+92348+Lewis+and+Clark+Rd%2C+Astoria%2C+OR" rel="noopener noreferrer" target="_blank">Open in Google Maps</a>
+          </div>
         </div>
       </div>
     </section>
